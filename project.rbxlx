@@ -1,0 +1,2534 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="18">
+		<Properties>
+			<bool name="AllowThirdPartySales">false</bool>
+			<token name="AnimationWeightedBlendFix">0</token>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<token name="ClientAnimatorThrottling">0</token>
+			<BinaryString name="CollisionGroupData">AQEABP////8HRGVmYXVsdA==</BinaryString>
+			<Ref name="CurrentCamera">RBX3C0B48C57AC44B639295D360B98F4E34</Ref>
+			<double name="DistributedGameTime">0</double>
+			<bool name="ExplicitAutoJoints">true</bool>
+			<float name="FallenPartsDestroyHeight">-500</float>
+			<Vector3 name="GlobalWind">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+			</Vector3>
+			<float name="Gravity">196.199997</float>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<token name="HumanoidOnlySetCollisionsOnStateChange">0</token>
+			<token name="InterpolationThrottling">0</token>
+			<token name="LevelOfDetail">0</token>
+			<token name="MeshPartHeadsAndAccessories">0</token>
+			<CoordinateFrame name="ModelMeshCFrame">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+			<Vector3 name="ModelMeshSize">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+			</Vector3>
+			<token name="ModelStreamingMode">0</token>
+			<string name="Name">Workspace</string>
+			<bool name="NeedsPivotMigration">false</bool>
+			<token name="PhysicsSteppingMethod">0</token>
+			<Ref name="PrimaryPart">null</Ref>
+			<token name="RejectCharacterDeletions">0</token>
+			<token name="ReplicateInstanceDestroySetting">0</token>
+			<token name="Retargeting">0</token>
+			<float name="ScaleFactor">1</float>
+			<token name="SignalBehavior">0</token>
+			<int64 name="SourceAssetId">-1</int64>
+			<token name="StreamOutBehavior">0</token>
+			<bool name="StreamingEnabled">false</bool>
+			<token name="StreamingIntegrityMode">0</token>
+			<int name="StreamingMinRadius">64</int>
+			<int name="StreamingTargetRadius">1024</int>
+			<BinaryString name="Tags"></BinaryString>
+			<bool name="TerrainWeldsFixed">true</bool>
+			<bool name="TouchesUseCollisionGroups">false</bool>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000002</UniqueId>
+			<OptionalCoordinateFrame name="WorldPivotData">
+				<CFrame>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CFrame>
+			</OptionalCoordinateFrame>
+		</Properties>
+		<Item class="Camera" referent="RBX3C0B48C57AC44B639295D360B98F4E34">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<CoordinateFrame name="CFrame">
+					<X>23.995369</X>
+					<Y>18.0661697</Y>
+					<Z>7.6242919</Z>
+					<R00>0.599026799</R00>
+					<R01>-0.38158372</R01>
+					<R02>0.703960896</R02>
+					<R10>-1.4901163e-08</R10>
+					<R11>0.879150033</R11>
+					<R12>0.476545334</R12>
+					<R20>-0.800729096</R20>
+					<R21>-0.285463423</R21>
+					<R22>0.526634336</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<token name="FieldOfViewMode">0</token>
+				<CoordinateFrame name="Focus">
+					<X>22.5874443</X>
+					<Y>17.1130772</Y>
+					<Z>6.57102108</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<string name="Name">Camera</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000003</UniqueId>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="19">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>-10</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CanQuery">true</bool>
+				<bool name="CanTouch">true</bool>
+				<bool name="CastShadow">true</bool>
+				<string name="CollisionGroup">Default</string>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284636770</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="MaterialVariantSerialized"></string>
+				<string name="Name">Baseplate</string>
+				<CoordinateFrame name="PivotOffset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002ff4</UniqueId>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>512</X>
+					<Y>20</Y>
+					<Z>512</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Terrain" referent="RBX258B03D844634E6185872210CC2A4592">
+			<Properties>
+				<token name="AcquisitionMethod">0</token>
+				<bool name="Anchored">true</bool>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CanQuery">true</bool>
+				<bool name="CanTouch">true</bool>
+				<bool name="CastShadow">true</bool>
+				<string name="CollisionGroup">Default</string>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<bool name="Decoration">false</bool>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<BinaryString name="MaterialColors"><![CDATA[AAAAAAAAan8/P39rf2Y/ilY+j35fi21PZmxvZbDqw8faiVpHOi4kHh4lZlw76JxKc3trhHta
+gcLgc4RKxr21zq2UlJSM]]></BinaryString>
+				<string name="MaterialVariantSerialized"></string>
+				<string name="Name">Terrain</string>
+				<BinaryString name="PhysicsGrid">AgMAAAAAAAAAAAAAAAA=</BinaryString>
+				<CoordinateFrame name="PivotOffset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="ShorelinesUpgraded">false</bool>
+				<BinaryString name="SmoothGrid">AQU=</BinaryString>
+				<bool name="SmoothVoxelsUpgraded">false</bool>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002ff5</UniqueId>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Color3 name="WaterColor">
+					<R>0.0500000007</R>
+					<G>0.330000013</G>
+					<B>0.360000014</B>
+				</Color3>
+				<float name="WaterReflectance">1</float>
+				<float name="WaterTransparency">0.300000012</float>
+				<float name="WaterWaveSize">0.150000006</float>
+				<float name="WaterWaveSpeed">10</float>
+				<Vector3 name="size">
+					<X>2044</X>
+					<Y>252</Y>
+					<Z>2044</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Folder" referent="RBXCC5B693EBBDD4558AD2AF93077FA74BD">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<string name="Name">__blox_components</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">750970b36a31d3fa0402b25e00005401</UniqueId>
+			</Properties>
+			<Item class="Part" referent="RBX678BBA5B38384862B143CDD20DB4E42B">
+				<Properties>
+					<bool name="Anchored">false</bool>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">0</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>0</X>
+						<Y>0.500003994</Y>
+						<Z>-5</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
+					<bool name="CanTouch">true</bool>
+					<bool name="CastShadow">true</bool>
+					<string name="CollisionGroup">Default</string>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<bool name="Massless">false</bool>
+					<token name="Material">256</token>
+					<string name="MaterialVariantSerialized"></string>
+					<string name="Name">MyPart</string>
+					<CoordinateFrame name="PivotOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<int name="RootPriority">0</int>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<UniqueId name="UniqueId">750970b36a31d3fa0402b25e00005402</UniqueId>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">1</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>4</X>
+						<Y>1</Y>
+						<Z>2</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="SoundService" referent="13">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<float name="DistanceFactor">3.32999992</float>
+			<float name="DopplerScale">1</float>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">SoundService</string>
+			<bool name="RespectFilteringEnabled">true</bool>
+			<float name="RolloffScale">1</float>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c000002f1</UniqueId>
+			<token name="VolumetricAudio">1</token>
+		</Properties>
+	</Item>
+	<Item class="NonReplicatedCSGDictionaryService" referent="RBX9021527AB82C4CB899F0B712875F0FB7">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">NonReplicatedCSGDictionaryService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c000002f2</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="CSGDictionaryService" referent="RBXAA5B3FEE09FE48DA8A61D9A29CDE8D59">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">CSGDictionaryService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c000002f3</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="Chat" referent="RBX9C71E368113D4819ABE2F365A44868EE">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<bool name="BubbleChatEnabled">false</bool>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<bool name="LoadDefaultChat">true</bool>
+			<string name="Name">Chat</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c000002f8</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="TimerService" referent="RBX72952F3CFBC4430EA314F2ABBB0227F9">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">TimerService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c000002f9</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBXDE54603F2B5B4D1DBFEE1509F5A973DE">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<bool name="CharacterAutoLoads">true</bool>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<int name="MaxPlayersInternal">12</int>
+			<string name="Name">Players</string>
+			<int name="PreferredPlayersInternal">0</int>
+			<float name="RespawnTime">5</float>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c000002fb</UniqueId>
+			<bool name="UseStrafingAnimations">false</bool>
+		</Properties>
+	</Item>
+	<Item class="ReplicatedFirst" referent="RBX57295EFC2CDE4742BC1E05D489505DDE">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">ReplicatedFirst</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c000002ff</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="TweenService" referent="RBX5804F4A2E84E424B924C52DD82D65F5D">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">TweenService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000301</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="MaterialService" referent="RBXE1FE4019534E4301A245CBF8825E741B">
+		<Properties>
+			<string name="AsphaltName">Asphalt</string>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<string name="BasaltName">Basalt</string>
+			<string name="BrickName">Brick</string>
+			<string name="CobblestoneName">Cobblestone</string>
+			<string name="ConcreteName">Concrete</string>
+			<string name="CorrodedMetalName">CorrodedMetal</string>
+			<string name="CrackedLavaName">CrackedLava</string>
+			<string name="DiamondPlateName">DiamondPlate</string>
+			<string name="FabricName">Fabric</string>
+			<string name="FoilName">Foil</string>
+			<string name="GlacierName">Glacier</string>
+			<string name="GraniteName">Granite</string>
+			<string name="GrassName">Grass</string>
+			<string name="GroundName">Ground</string>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="IceName">Ice</string>
+			<string name="LeafyGrassName">LeafyGrass</string>
+			<string name="LimestoneName">Limestone</string>
+			<string name="MarbleName">Marble</string>
+			<string name="MetalName">Metal</string>
+			<string name="MudName">Mud</string>
+			<string name="Name">MaterialService</string>
+			<string name="PavementName">Pavement</string>
+			<string name="PebbleName">Pebble</string>
+			<string name="PlasticName">Plastic</string>
+			<string name="RockName">Rock</string>
+			<string name="SaltName">Salt</string>
+			<string name="SandName">Sand</string>
+			<string name="SandstoneName">Sandstone</string>
+			<string name="SlateName">Slate</string>
+			<string name="SmoothPlasticName">SmoothPlastic</string>
+			<string name="SnowName">Snow</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000302</UniqueId>
+			<bool name="Use2022MaterialsXml">false</bool>
+			<string name="WoodName">Wood</string>
+			<string name="WoodPlanksName">WoodPlanks</string>
+		</Properties>
+	</Item>
+	<Item class="PermissionsService" referent="RBX437F2CFC9F6744AC88AA1518507954AA">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">PermissionsService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000306</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="PlayerEmulatorService" referent="RBXDA6535FB389A46169E0A2D6CBD3CCCC6">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<bool name="CustomPoliciesEnabled">false</bool>
+			<string name="EmulatedCountryCode"></string>
+			<string name="EmulatedGameLocale"></string>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">PlayerEmulatorService</string>
+			<bool name="PlayerEmulationEnabled">false</bool>
+			<BinaryString name="SerializedEmulatedPolicyInfo"></BinaryString>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000308</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="StudioData" referent="RBX5FDCFB58646D43FF9D08F4F1DF6DCBD9">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<bool name="EnableScriptCollabByDefaultOnLoad">false</bool>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">StudioData</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000030b</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="StarterPlayer" referent="14">
+		<Properties>
+			<bool name="AllowCustomAnimations">true</bool>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<bool name="AutoJumpEnabled">true</bool>
+			<float name="CameraMaxZoomDistance">400</float>
+			<float name="CameraMinZoomDistance">0.5</float>
+			<token name="CameraMode">0</token>
+			<float name="CharacterJumpHeight">7.19999981</float>
+			<float name="CharacterJumpPower">50</float>
+			<float name="CharacterMaxSlopeAngle">89</float>
+			<bool name="CharacterUseJumpPower">true</bool>
+			<float name="CharacterWalkSpeed">16</float>
+			<token name="DevCameraOcclusionMode">0</token>
+			<token name="DevComputerCameraMovementMode">0</token>
+			<token name="DevComputerMovementMode">0</token>
+			<token name="DevTouchCameraMovementMode">0</token>
+			<token name="DevTouchMovementMode">0</token>
+			<token name="EnableDynamicHeads">0</token>
+			<bool name="EnableMouseLockOption">true</bool>
+			<int64 name="GameSettingsAssetIDFace">0</int64>
+			<int64 name="GameSettingsAssetIDHead">0</int64>
+			<int64 name="GameSettingsAssetIDLeftArm">0</int64>
+			<int64 name="GameSettingsAssetIDLeftLeg">0</int64>
+			<int64 name="GameSettingsAssetIDPants">0</int64>
+			<int64 name="GameSettingsAssetIDRightArm">0</int64>
+			<int64 name="GameSettingsAssetIDRightLeg">0</int64>
+			<int64 name="GameSettingsAssetIDShirt">0</int64>
+			<int64 name="GameSettingsAssetIDTeeShirt">0</int64>
+			<int64 name="GameSettingsAssetIDTorso">0</int64>
+			<token name="GameSettingsAvatar">1</token>
+			<token name="GameSettingsR15Collision">0</token>
+			<NumberRange name="GameSettingsScaleRangeBodyType">0 1 </NumberRange>
+			<NumberRange name="GameSettingsScaleRangeHead">0.95 1 </NumberRange>
+			<NumberRange name="GameSettingsScaleRangeHeight">0.9 1.05 </NumberRange>
+			<NumberRange name="GameSettingsScaleRangeProportion">0 1 </NumberRange>
+			<NumberRange name="GameSettingsScaleRangeWidth">0.7 1 </NumberRange>
+			<float name="HealthDisplayDistance">100</float>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<token name="HumanoidStateMachineMode">0</token>
+			<bool name="LoadCharacterAppearance">true</bool>
+			<token name="LoadCharacterLayeredClothing">0</token>
+			<string name="Name">StarterPlayer</string>
+			<float name="NameDisplayDistance">100</float>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000030c</UniqueId>
+			<bool name="UserEmotesEnabled">true</bool>
+		</Properties>
+		<Item class="StarterPlayerScripts" referent="15">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<string name="Name">StarterPlayerScripts</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002ff1</UniqueId>
+			</Properties>
+			<Item class="LocalScript" referent="16">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="Disabled">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Client</string>
+					<token name="RunContext">0</token>
+					<string name="ScriptGuid">{FD1C975D-E87D-4011-BABC-2A423A04A864}</string>
+					<ProtectedString name="Source">print(&quot;Hello world, from client!&quot;)</ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002ff2</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="17">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">BloxRegister</string>
+						<string name="ScriptGuid">{52F58320-0E80-40FE-8C08-078A4A1FBF4A}</string>
+						<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService"ReplicatedStorage"
+local Blox = require(ReplicatedStorage.Common.Blox)
+
+local register = Blox.Register.new()
+
+return register]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002ff3</UniqueId>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="StarterCharacterScripts" referent="RBXE134D0B387444B6AA3EFC89341F396A8">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<string name="Name">StarterCharacterScripts</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002ff6</UniqueId>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="StarterPack" referent="RBXB6F0F2D851DA430F89BBDED1DF66E0BD">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">StarterPack</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000030d</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBXD832A642641942E4AB5E9B65F822E3D3">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">StarterGui</string>
+			<bool name="ResetPlayerGuiOnSpawn">true</bool>
+			<token name="ScreenOrientation">2</token>
+			<bool name="ShowDevelopmentGui">true</bool>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000030e</UniqueId>
+			<token name="VirtualCursorMode">0</token>
+		</Properties>
+	</Item>
+	<Item class="LocalizationService" referent="RBX00499928B19045B5BBD20289F2C37148">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">LocalizationService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000312</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="TeleportService" referent="RBXE2E21E359AE34A83A75EDDB52FFE90E7">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">Teleport Service</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000315</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="CollectionService" referent="RBX8C4111668E3E422A8AE45834FF4D346A">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">CollectionService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000317</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="PhysicsService" referent="RBX7857422963C54C29B7801B853BDDCCA1">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">PhysicsService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000318</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX7DD86405E88049BD93BD5490D7391EA7">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">Geometry</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000031a</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="InsertService" referent="RBXCB7E068FA9D84D50B1538EA1A531016A">
+		<Properties>
+			<bool name="AllowClientInsertModels">false</bool>
+			<bool name="AllowInsertFreeModels">false</bool>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">InsertService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000031c</UniqueId>
+		</Properties>
+		<Item class="StringValue" referent="RBX8DB8EE2F1AB04979B034847DD2C3A8BF">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<string name="Name">InsertionHash</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">2921eacd6458a89a0402177c00004dcd</UniqueId>
+				<string name="Value">{A56EF6D9-FABE-4A33-A9E5-4B9BB93C9B40}</string>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="GamePassService" referent="RBXFD84870F30B842CA948300EBB6D65DA3">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">GamePassService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000031d</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="Debris" referent="RBX47A1AE43047B4F1AB427089DB0A319E7">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000031e</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="CookiesService" referent="RBXB721DE207E0A49F49F1BD2D2F91C6106">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">CookiesService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000031f</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="VRService" referent="RBX012DFE2155D24D10BD31A120345E267F">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">VRService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000323</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="ContextActionService" referent="RBX0505E858941F4745BBBE9A70540B4E91">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">ContextActionService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000324</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="ScriptService" referent="RBX0FEF536D8B624CA88B130A02B8805B1A">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">ScriptService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000325</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="AssetService" referent="RBXCBDC3868F29943DB8FE8638A51054F66">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">AssetService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000326</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="TouchInputService" referent="RBX9F4BD287A71D43EC9F8BA50621C80977">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">TouchInputService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000327</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="AnalyticsService" referent="RBXAFB22463A8A44416B93FA074B613FCEF">
+		<Properties>
+			<string name="ApiKey"></string>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">AnalyticsService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000032a</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="Selection" referent="RBXC61797660CB443788F0E6C105E1EA849">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">Selection</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000032c</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="ServerScriptService" referent="8">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<bool name="LoadStringEnabled">false</bool>
+			<string name="Name">ServerScriptService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000032d</UniqueId>
+		</Properties>
+		<Item class="Script" referent="9">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<bool name="Disabled">false</bool>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<token name="RunContext">0</token>
+				<string name="ScriptGuid">{F7B429F9-BE15-4514-A022-82F1DA0C5922}</string>
+				<ProtectedString name="Source"><![CDATA[-- when a player joins, add the "PlayerKiller" component to their humanoid
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Component = require(ReplicatedStorage.Common.Component)
+local Templor = require(ReplicatedStorage.Common.Templor)
+local ServerStorage = game:GetService("ServerStorage")
+local PLAYER_KILLER = ServerStorage.Components.PlayerKiller
+
+
+
+
+-- For Templor system
+local __BLOX_CONFIGURATION = {
+    Name = "__blox_components",
+    Path = "Workspace"
+}
+
+Templor.Rearrange(__BLOX_CONFIGURATION)]]></ProtectedString>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002fec</UniqueId>
+			</Properties>
+			<Item class="ModuleScript" referent="10">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">BloxRegister</string>
+					<string name="ScriptGuid">{75F03132-E5AC-4501-A400-EF53E2C95A75}</string>
+					<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService"ReplicatedStorage"
+local BloxRegister = require(ReplicatedStorage.Common.BloxRegister)
+
+local register = BloxRegister.new()
+
+register:Add("PlayerKiller", {
+    
+})
+
+return register]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002fed</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="Folder" referent="11">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">__blox_components</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002fee</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="RBX9F1D790B02124B7C9EC7956771292A9A">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">PlayerKiller</string>
+						<string name="ScriptGuid">{904FB419-E06B-4966-AB32-228854C5AE2C}</string>
+						<ProtectedString name="Source"><![CDATA[--[[
+    Blox component for killing players.
+    This component is used to kill players, every player with this blox assigned will have
+    the component "PlayerKiller" attached to them.
+
+    @author jkf16m
+    @version 0.1
+
+    @example
+    local humanoid = -- get a player humanoid
+    local player_killer = Blox:Get(humanoid:FindFirstChild("PlayerKiller"))
+    player_killer:Kill() -- kills the parent player of the "PlayerKiller" component
+]]
+
+--[[
+    Gets the blox register from the server module "BloxRegister"
+]]
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local __blox_components = script.Parent
+local server = __blox_components.Parent
+local blox_register = require(server.BloxRegister)
+
+blox_register:Add("PlayerKiller", {
+    __constraints = {
+        ParentType = "Humanoid",
+        InstanceType = "Folder",
+    },
+
+    __methods = {
+        -- Kills the parent player of the "PlayerKiller" component
+        Kill = function(self)
+            local humanoid = self.Parent
+            humanoid.Health = -1
+        end
+    }
+})
+
+-- when a player joins the game, add the "PlayerKiller" component to their humanoid
+game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        local humanoid = character:WaitForChild("Humanoid")
+        blox_register.NewBlox(blox_register, "PlayerKiller",humanoid)
+    end)
+end)
+
+blox_register:GetBloxCreatedSignal("PlayerKiller"):Connect(function(component)
+    print(component)
+    task.wait(5)
+
+    component:Kill()
+end)]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">750970b36a31d3fa0402b25e000043d2</UniqueId>
+					</Properties>
+				</Item>
+				<Item class="ModuleScript" referent="RBXDF138D7A883144808699321C294D53EF">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">PlayerSmoothMovement</string>
+						<string name="ScriptGuid">{61925121-47C1-497E-9B8F-8D58E9FE8415}</string>
+						<ProtectedString name="Source"><![CDATA[--[[
+    SmoothMovement Component
+
+    This component is used to move a player smoothly, with a little bit of acceleration.
+]]
+
+local __blox_components = script.Parent
+local server = __blox_components.Parent
+local blox_register = require(server.BloxRegister)
+
+blox_register:Add("PlayerSmoothMovement", {
+    _constraints = {
+        ParentType = "Humanoid",
+        InstanceType = "Folder"
+    },
+    _props = {
+        Speed = 0
+    },
+    _connections = function(self)
+        return {
+            self:GetParent().RootPart:GetPropertyChangedSignal("Velocity"):Connect(function()
+                self:Move(self.Direction, self.Speed)
+            end)
+        }
+    end,
+
+    -- Moves the parent player of the "PlayerSmoothMovement" component
+    Move = function(self, direction, speed)
+        local humanoid = self:GetParent()
+        local root_part = humanoid.RootPart
+        local velocity = direction * speed
+        local acceleration = 0.1
+
+        local new_velocity = root_part.Velocity:Lerp(velocity, acceleration)
+        root_part.Velocity = new_velocity
+    end
+})]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">750970b36a31d3fa0402b25e000043d4</UniqueId>
+					</Properties>
+				</Item>
+				<Item class="ModuleScript" referent="RBX06693DE72A394172BEA3E2317FC9DE69">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">DimensionalTraveller</string>
+						<string name="ScriptGuid">{E76BC8E0-F527-44A6-B824-3428006BB23E}</string>
+						<ProtectedString name="Source"><![CDATA[--[[
+    Dimensional Traveller tool.
+
+    This tool enables a Robloxian to travel between different dimensions.
+
+    Currently only supports to modify the robloxian position W.
+
+    To use this tool, you must have it equipped and then you can use the mouse wheel to change
+        the position W of the robloxian.
+
+    When a robloxian changes its PositionW, there are a lot of things that will happen in game:
+    1- You will stop rendering the parts that are not in the same W position as you.
+    (Every part by default has a SizeW of 0 and PositionW of 0), so you can practically fall through
+    the world if there is not any HyperPart in the game, and with this tool, you can't
+    see if there is any HyperPart in your neaby W position, so use with caution.
+    2- You will start rendering the parts that are in the same W position as you.
+    You will be able to see them and touch them.
+    
+    When travelling through coordinate W(+-1), there is a smooth transition between the two coordinates.
+    This transition can be configured with the property "TransitionSpeed" of the tool.
+
+    Take for example, an HyperPart that has three diferent sizes, (three different parts in the folder).
+    If the three of them are of different X,Y,Z sizes, the robloxian should be able to see
+     a part that is constantly changing size, and seemingly flying when it is small.
+]]]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">4b082db402e520b3040431d600004e09</UniqueId>
+					</Properties>
+				</Item>
+				<Item class="ModuleScript" referent="RBX806CA41FB87F47C687EA4DD9AF40FB2C">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">HyperPart</string>
+						<string name="ScriptGuid">{FDC4F739-4659-458C-A3FE-B001A1B64E4D}</string>
+						<ProtectedString name="Source"><![CDATA[Blox:Add({
+    __constraints = {
+        InstanceType = "Part",
+        Child = {
+            __SizeW = {
+                InstanceType = "Folder",
+                Children = {
+                    Parts = {
+                        InstanceType = "blox:HyperPartChild"
+                    }
+                }
+            }
+        }
+    },
+    __props ={
+        SizeW = 0,
+        PositionW = 0,
+        RotationW = 0,
+        
+        -- An hyperpart with a SizeW of 0 would only render its collision in the SizeW == PositionW
+        -- An hyperpart with SizeW = 1 would render its collision in the PositionW+(SizeW/2) and
+        -- PositionW-(SizeW/2)
+        -- A robloxian can only have SizeW = 0, but he can change his PositionW
+
+        -- This current implementation can only change the SizeW and PositionW of the hyperpart, but
+        -- not the RotationW
+
+        -- This current implementation supports an array of parts, to represent different states of
+        -- the Hyperpart.
+
+        -- For example, an Hyperpart with variable Dimensions, would look like a Cube in SizeW = 0,
+        -- but it would be like a rectangle in SizeW = 1
+
+        -- This behaviour is enabled by default, you must put parts in the folder __SizeW,
+        -- and the parts must have the property "SizeWRange" with the range of SizeW that the part
+        -- can cover
+    }
+})]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">4b082db402e520b3040431d600004e0b</UniqueId>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX9C237213E8AA403FB445F4FCA8E523CE">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="Disabled">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">RunAllTests</string>
+					<token name="RunContext">0</token>
+					<string name="ScriptGuid">{1D3042B8-A615-4011-BD82-72E4C09392E9}</string>
+					<ProtectedString name="Source"><![CDATA[
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Test = require(ReplicatedStorage.Common.Test)
+
+local test_register = Test.TestRegister.new()
+
+-- first, get all test contexts from the ReplicatedStorage.Common.__tests folder
+local test_contexts = {}
+for _, test_context in pairs(ReplicatedStorage.Common.__tests:GetChildren()) do
+    if test_context:IsA("ModuleScript") then
+        table.insert(test_contexts, require(test_context))
+    end
+end
+
+-- add all the test contexts to the TestRegister
+for _, test_context in pairs(test_contexts) do
+    test_register:AddTestContext(test_context)
+end
+
+-- run all the tests
+test_register:RunAllTests()
+
+
+game.Players.PlayerAdded:Connect(function(player)
+    player:Kick("All tests ran successfully!")
+end)]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000388e</UniqueId>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="ServerStorage" referent="RBX0406BEE81C074F23845F7AA60A8C1D8E">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">ServerStorage</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000032e</UniqueId>
+		</Properties>
+		<Item class="Folder" referent="RBX8A0F02C4EFD048DABF6EC66C1F3691D8">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<string name="Name">Components</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">750970b36a31d3fa0402b25e00004b6b</UniqueId>
+			</Properties>
+			<Item class="Folder" referent="RBX65571293D89F4C61A723F2DDCCBD3FB4">
+				<Properties>
+					<BinaryString name="AttributesSerialize">AQAAABAAAABTaG91bGRLaWxsUGxheWVyAwE=</BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">PlayerKiller</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">750970b36a31d3fa0402b25e00004b6c</UniqueId>
+				</Properties>
+				<Item class="Script" referent="RBXB4486D4ECF7D4490BA28CD73EB322189">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="Disabled">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">script</string>
+						<token name="RunContext">0</token>
+						<string name="ScriptGuid">{E6A931D6-986E-46BA-8A60-C5D173F0D5CB}</string>
+						<ProtectedString name="Source"><![CDATA[local instance = script.parent
+local parent = instance.parent
+if(not parent:IsA("Humanoid")) then return end
+local humanoid = parent
+
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local EventTools = require(ReplicatedStorage.Common.EventTools)
+
+
+EventTools.Connect("KillPlayer", function()
+    local SHOULD_KILL_PLAYER= instance:GetAttribute("ShouldKillPlayer")
+    if(SHOULD_KILL_PLAYER) then
+        humanoid.Health = 0
+    end
+end)
+]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">750970b36a31d3fa0402b25e00004b6d</UniqueId>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="ReplicatedStorage" referent="1">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">ReplicatedStorage</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000032f</UniqueId>
+		</Properties>
+		<Item class="Folder" referent="2">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<string name="Name">Common</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<UniqueId name="UniqueId">2921eacd6458a89a0402177c00002fe6</UniqueId>
+			</Properties>
+			<Item class="Folder" referent="RBXAE9EFC610F6747F5BAF2E36B6F1FC57F">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">__tests</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">2921eacd6458a89a0402177c00003881</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="RBX742B8FC0EFF347129E6D952101C449A3">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">__test_Templor</string>
+						<string name="ScriptGuid">{B98044C9-9A9C-40B6-9451-B5ACE0AD59F6}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+local Test = require(script.Parent.Parent.Test)
+local Templor = require(script.Parent.Parent.Templor)
+
+local C = Test.TestContext.new("Templor") -- create a new test context
+
+C:Add("Create a template with Templor",
+function(self)
+
+end)
+
+return C]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">4b082db402e520b3040431d600003d04</UniqueId>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ModuleScript" referent="RBX266C487D54FA4E1FB45FBF960C9F8021">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Component</string>
+					<string name="ScriptGuid">{5FE58656-B709-4ACE-BBD7-6DDDE37F0BB8}</string>
+					<ProtectedString name="Source"><![CDATA[local module = {}
+
+function module.Add(parent, child)
+    -- Adds a child to the parent
+    child.Parent = parent
+end
+
+return module]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">750970b36a31d3fa0402b25e00003d67</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX374CC84AFC4C4F7F8180DF212B1D58B0">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">CVolume</string>
+					<string name="ScriptGuid">{A60E349C-46BC-491D-AC6E-5B18AE193B54}</string>
+					<ProtectedString name="Source"><![CDATA[-- 4D implementation of CFrame, "Coordinate Frame" class of Roblox
+
+local CVolume = {}
+CVolume.__index = CVolume
+
+function CVolume.new(x,y,z,w, xx, xy, yx, yz, zx, zy, wx, wy, wz)
+    local self = {}
+    self.x = x
+    self.y = y
+    self.z = z
+    self.w = w
+    self.xx = xx
+    self.xy = xy
+    self.yx = yx
+    self.yz = yz
+    self.zx = zx
+    self.zy = zy
+    self.wx = wx
+    self.wy = wy
+    self.wz = wz
+    return setmetatable(self, CVolume)
+end
+]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">750970b36a31d3fa0402b25e0000dffd</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXDE0CCCE01A0B4A8AB4B1F5E915908855">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Vector4</string>
+					<string name="ScriptGuid">{2973529E-F01B-4028-93EE-7478D5B77134}</string>
+					<ProtectedString name="Source"><![CDATA[--!strict
+local IEqual = require(script.Parent.Interfaces.IEqual)
+type Vector4Inst = {
+    x: number,
+    y: number,
+    z: number,
+    w: number,
+    GetVector3: () -> Vector3,
+    FromVector3: (Vector3, number) -> Vector4Inst,
+    Clone: () -> Vector4Inst,
+    __add: (Vector4Inst) -> Vector4Inst,
+    __mul: (Vector4Inst) -> Vector4Inst,
+    __div: (Vector4Inst) -> Vector4Inst
+}
+type Vector4 = IEqual.IEqual<Vector4Inst> & Vector4Inst
+
+local Vector4: Vector4 = {}
+Vector4.__index = Vector4
+
+
+function Vector4.is(other) : Vector4
+    return type(other) == "table" and getmetatable(other) == Vector4
+end
+
+function Vector4.new(x:number, y:number, z:number, w:number): Vector4
+    local self = {
+        x = x,
+        y = y,
+        z = z,
+        w = w
+    }
+    return setmetatable(self, Vector4)
+end
+function Vector4:GetVector3() : Vector3
+    return Vector3.new(self.x, self.y, self.z)
+end
+function Vector4.FromVector3(vector3:Vector3, w:number)
+    local self = {
+        x = vector3.X,
+        y = vector3.Y,
+        z = vector3.Z,
+        w = w
+    }
+    return setmetatable(self, Vector4)
+end
+
+function Vector4:Clone()
+    return Vector4.new(self.x, self.y, self.z, self.w)
+end
+
+function Vector4:__add(other: Vector4) :Vector4
+    return Vector4.new(
+        self.vector3.X + other.vector3.X,
+        self.vector3.Y + other.vector3.Y,
+        self.vector3.Z + other.vector3.Z,
+        self.w + other.w
+    )
+end
+
+function Vector4:__mul(other:Vector4) : Vector4
+    return Vector4.new(
+        self.vector3.X * other.vector3.X,
+        self.vector3.Y * other.vector3.Y,
+        self.vector3.Z * other.vector3.Z,
+        self.w * other.w
+    )
+end
+
+function Vector4:__div(other:Vector4): Vector4
+    return Vector4.new(
+        self.vector3.X / other.vector3.X,
+        self.vector3.Y / other.vector3.Y,
+        self.vector3.Z / other.vector3.Z,
+        self.w / other.w
+    )
+end]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">750970b36a31d3fa0402b25e0000e008</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="Folder" referent="RBX28AC71B91A1A49119DA5875EE10FC005">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">Interfaces</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">750970b36a31d3fa0402b25e0000e00a</UniqueId>
+				</Properties>
+				<Item class="ModuleScript" referent="RBXB6F10A546A7447468A7ED6DB7AAD288C">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">IEqual</string>
+						<string name="ScriptGuid">{F5EC13CB-CFD2-4CD5-AA70-A1308A0508B0}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+export type IEqual<T> = {
+    __eq: (T, any) -> boolean
+}
+
+return nil]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">750970b36a31d3fa0402b25e0000e00b</UniqueId>
+					</Properties>
+				</Item>
+				<Item class="ModuleScript" referent="RBXFB3EA3A355D647FF8792CC4A00C9D0FB">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">BloxDefinition</string>
+						<string name="ScriptGuid">{8FDACC84-4733-44B6-9DBC-6828BB756A54}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+export type BloxConnection = {
+    [string]: RBXScriptSignal | RBXScriptConnection
+}
+export type BloxConstraint = {
+    ParentType: string,
+    InstanceType: string,
+    Children: {
+        [string]: BloxConstraint
+    },
+    Child: BloxConstraint
+}
+export type BloxDefinition<FunctionsType> = {
+    __constraints: BloxConstraint,
+    __connections: BloxConnection|nil,
+    __methods: FunctionsType
+}
+
+return nil]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">4b082db402e520b3040431d600004e0f</UniqueId>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ModuleScript" referent="RBXCCB7107D33C84EE9BF27D201D4498CC4">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Templor</string>
+					<string name="ScriptGuid">{C37A35B9-8B9C-4E57-A32D-5CF3E6FB005A}</string>
+					<ProtectedString name="Source"><![CDATA[--!strict
+--A Template system, to create objects from a template, and then modify them.
+
+--Templor configuration object:
+-- It configures how the templor system will rearrange the folders of the project when it starts.
+-- In this case, The templates can be declared in both ServerStorage and Workspace.
+-- After the game starts, Templor will rearrange the folders, so that the templates are only in ServerStorage.
+-- And then you can create the templates from the ServerStorage, using the Register,
+-- you can simply call New(template_name) to Clone a template and return it. 
+type TemplorConfiguration = {
+    Name: string,
+    Path: string | {string}
+}
+local __EXAMPLE_CONFIGURATION = {
+    Name = "__example_configuration",
+    -- This can be either a string, or a table of strings.
+    Path = "Workspace"
+    
+}
+
+-- and then with the Templor object you simply call
+-- you call Templor.Rearrange(configuration)
+
+-- Utility functions
+function TableInsertOrError(tabl, value, error_string): ()
+    if(value == nil) then error(error_string) end
+    table.insert(tabl, value)
+end
+
+
+
+local ServerStorage = game:GetService("ServerStorage")
+
+--[[
+    Get children from of ServerStorage/{path}
+]]
+function GetChildrenFromPath(path:string,name:string): {Instance}
+    local children:{Instance} = {}
+    local parent = game:GetService(path):FindFirstChild(name)
+    if(parent == nil) then
+        error("Invalid path")
+    end
+    for _, child in pairs(parent:GetChildren()) do
+        TableInsertOrError(children, child, "Invalid child")
+    end
+    return children
+end
+
+function GetChildrenFromPaths(paths: {string}, name: string): {Instance}
+    local children: {Instance} = {}
+    for _, path in pairs(paths) do
+        local children_from_path = GetChildrenFromPath(path, name)
+        for _, child in pairs(children_from_path) do
+            TableInsertOrError(children, child, "Invalid child")
+        end
+    end
+    return children
+end
+
+--[[
+    1. Check if paths is either a string or string table
+    2. If it is a string,
+    2.1 then GetChildrenFromPath
+    2.2 if it is a string table, then GetChildrenFromPaths
+]]
+function TryGetChildrenFromPaths(paths: string | {string}, name: string) : {Instance}
+    local children:{Instance} = {}
+    if(typeof(paths) == "string") then
+        children = GetChildrenFromPath(paths, name)
+    elseif(typeof(paths) == "table") then
+        children = GetChildrenFromPaths(paths, name)
+    else
+        error("Invalid path type")
+    end
+    return children
+end
+
+--[[
+    Moves the children to the ServerStorage/{Name} folder
+]]
+function MoveChildrenToServerStorage(children: {Instance}, Name: string): ()
+    local parent: Instance = ServerStorage:FindFirstChild(Name)
+    if(parent == nil) then
+        parent = Instance.new("Folder")
+        parent.Name = Name
+        parent.Parent = ServerStorage
+    end
+    for _, child in pairs(children) do
+        child.Parent = parent
+    end
+end
+
+function DeleteRemainingFolder(paths: string | {string}, name: string): ()
+    if(typeof(paths) == "string") then
+        local parent = game:GetService(paths):FindFirstChild(name)
+        if(parent ~= nil) then
+            parent:Destroy()
+        end
+    elseif(typeof(paths) == "table") then
+        for _, path in pairs(paths) do
+            local parent = game:GetService(path):FindFirstChild(name)
+            if(parent ~= nil) then
+                parent:Destroy()
+            end
+        end
+    else
+        error("Invalid path type")
+    end
+end
+
+local Templor = {}
+
+--[[
+    Rearranges the objects in the game, according to the configuration.
+    The configuration must have a Name
+    the configuration can have a TemplatePath, which is the path to the templates, they can be
+    either a string, or a table of strings.
+
+
+    The steps to follow would be:
+
+    1. Get the Name.
+
+    2. Get the path or paths of the templates
+
+    3. Get the children from each path
+
+    4. Move the children to the ServerStorage with the folder of {Name} (In case it doesn't exists, create it as a Folder)
+
+    5. Delete the remaining folder from the paths.
+
+]]
+function Templor.Rearrange(configuration: TemplorConfiguration): ()
+    -- configuration
+    local c = configuration
+    -- step 1
+    local Name = c.Name
+    
+    -- step 2
+    local Path = c.Path
+
+    -- step 3
+    local children = TryGetChildrenFromPaths(Path, Name)
+
+    -- step 4
+    MoveChildrenToServerStorage(children, Name)
+
+    -- step 5
+    DeleteRemainingFolder(Path, Name)
+
+
+end
+
+return Templor]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">4b082db402e520b3040431d60000420e</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXE708AD8334B84550B5213810ED6B4057">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Test</string>
+					<string name="ScriptGuid">{5820A91E-D088-40C0-8BB5-814BBBEBF684}</string>
+					<ProtectedString name="Source"><![CDATA[--!strict
+--[[
+    @file Test.lua
+    @description This is a class that is used to test the functionality of some of the classes in the game.
+    The main class "Test" is used to store all the tests that are going to be run.
+    The method "Add" adds a function to test, this function provides a "self" parameter with all
+        the internal test methods, like asserting and the kind.
+    @author jkf16m
+    @version 0.1
+    @date 2023-02-17
+]]
+
+-- the class function
+
+
+local module = {}
+local TestService = game:GetService("TestService")
+
+--prints blue text with TestService
+function print_blue(text)
+    TestService:Message(text)
+end
+function print_orange(text)
+    TestService:Warn(false, text)
+end
+function print_red(text)
+    TestService:Error(text)
+end
+
+
+-- A test example is in the file: "src/shared/__tests/Blox.lua"
+type Result = {
+    name: string,
+    success: boolean,
+    message: string,
+}
+local Result = {}
+Result.__index = Result
+
+--[[
+    @description This is a class
+    that stores the result of a certain assertion.
+]]
+function Result.new(name:string, success:boolean, message:string) : Result
+    local self = {}
+    self.name = name
+    self.success = success
+    self.message = message
+    return setmetatable(self, Result)
+end
+
+--[[
+    @description This class stores all the methods
+    that are going to be use to test the functionality.
+    The methods are all assertions.
+    It also stores the results of those assertions.
+]]
+
+export type BooleanAssertion<T> = (self: T, actual:boolean, expected:boolean) -> ()
+type TestUtilities = {
+    name: string,
+    results: {Result},
+    Assert: (self: TestUtilities, actual:boolean, expected:boolean) -> (),
+    AssertNot: (self: TestUtilities, actual:boolean, expected:boolean) -> (),
+    AssertEquals: (self: TestUtilities, actual: any, expected: any) -> (),
+    AssertIsTrue: (self: TestUtilities, actual: any) -> (),
+    AssertIsFalse: (self: TestUtilities, actual: any) -> (),
+    AssertIsNil: (self: TestUtilities, actual: any) -> (),
+    AssertIsNotNil: (self: TestUtilities, actual: any) -> (),
+    AssertIsType: (self: TestUtilities, actual: any, expected_type: string) -> (),
+    AssertIsNotType: (self: TestUtilities, actual: any, expected_type: string) -> (),
+
+}
+local TestUtilities = {}
+TestUtilities.__index = TestUtilities
+function TestUtilities.new(name: string): TestUtilities
+    local self:{name: string, results: {}} = {}
+    self.results = {}
+    self.name = name
+    return setmetatable(self, TestUtilities)
+end
+
+    -- Asserts that the actual value is equal to the expected value.
+    -- the message is predefined by this function.
+function TestUtilities:Assert(actual:boolean, expected:boolean)
+    local success = actual == expected
+    local message = "Expected: " .. tostring(expected) .. " but got: " .. tostring(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+    -- Asserts that the actual value is not equal to the expected value.
+    -- the message is predefined by this function.
+function TestUtilities:AssertNot(actual:boolean, expected:boolean)
+    local success = actual ~= expected
+    local message = "Expected: " .. tostring(expected) .. " but got: " .. tostring(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+    -- Asserts that the references or values are the same.
+function TestUtilities:AssertEquals<T>(actual: T, expected: T)
+    local success = actual == expected
+    local message = "Expected: " .. tostring(expected) .. " but got: " .. tostring(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+    -- Asserts that the references or values are not the same.
+
+function TestUtilities:AssertIsTrue(actual)
+    local success = actual == true
+    local message = "Expected: true but got: " .. tostring(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+function TestUtilities.AssertIsFalse(self, actual)
+    local success = actual == false
+    local message = "Expected: false but got: " .. tostring(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+function TestUtilities.AssertIsNil(self, actual)
+    local success = actual == nil
+    local message = "Expected: nil but got: " .. tostring(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+function TestUtilities.AssertIsNotNil(self, actual)
+    local success = actual ~= nil
+    local message = "Expected: not nil but got: " .. tostring(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+function TestUtilities.AssertIsType(self, actual, expected_type)
+    local success = typeof(actual) == expected_type
+    local message = "Expected: " .. expected_type .. " but got: " .. typeof(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+function TestUtilities.AssertIsNotType(self, actual, expected_type)
+    local success = typeof(actual) ~= expected_type
+    local message = "Expected: " .. expected_type .. " but got: " .. typeof(actual)
+    table.insert(self.results, Result.new(self.name, success, message))
+end
+
+
+
+
+
+
+
+type Test = {
+    description: string,
+    func: (TestUtilities) -> (),
+    results: {Result},
+}
+local Test = {}
+Test.__index = Test
+
+
+function Test.new(description, func): Test
+    local self = {}
+    self.description = description
+    self.func = func
+    self.results = {}
+
+    return setmetatable(self, Test)
+end
+
+
+    -- runs the test inside a pcall
+function Test:Run(): {Result}
+    local success, err = pcall(function()
+        local test_utilities = TestUtilities.new(self.description)
+        self.func(test_utilities)
+        self.results = test_utilities.results
+    end)
+
+    if not success then
+        local result = Result.new(self.description, false, err)
+        self.results = {result}
+    end
+
+    return self.results
+end
+
+
+
+
+--[[
+    @description This class stores all the tests
+    that are going to be run.
+]]
+type TestContext = {
+    name: string,
+    tests: {Test},
+    Add: (self: TestContext, description: string, func: (TestUtilities)->()) -> (),
+}
+local TestContext = {}
+TestContext.__index = TestContext
+
+
+function TestContext.new(name): TestContext
+    local self = {}
+    self.name = name
+    self.tests = {}
+
+    return setmetatable(self, TestContext)
+end
+
+
+
+
+    
+-- This adds a test to the TestContext
+function TestContext:Add(description: string, func: (TestUtilities)->()) : ()
+    local test = Test.new(description, func)
+    table.insert(self.tests, test)
+end
+
+-- This runs all the tests in the TestContext
+function TestContext.RunAllTests(self)
+    local results = {}
+    for _, test in pairs(self.tests) do
+        local test_results = test:Run()
+        for _, result in pairs(test_results) do
+            table.insert(results, result)
+        end
+    end
+
+    return results
+end
+
+
+
+
+
+
+type TestRegister = {
+    test_contexts: {TestContext}
+}
+local TestRegister = {}
+TestRegister.__index = TestRegister
+
+function TestRegister.new(): TestRegister
+    local self = {}
+    self.test_contexts = {}
+
+    return setmetatable(self, TestRegister)
+end
+
+
+
+function TestRegister.AddTestContext(self, context)
+    local test_context = context
+    table.insert(self.test_contexts, test_context)
+    return test_context
+end
+
+--[[
+    @description This runs all the tests in all the TestContexts
+    and prints the results.
+]]
+function TestRegister.RunAllTests(self)
+    local results = self:_GetAllResults()
+    self:_PrintResults(results)
+end
+
+--[[
+    @description Get all the results from all the tests in all the TestContexts
+]]
+function TestRegister._GetAllResults(self)
+    local results = {}
+    for _, test_context in pairs(self.test_contexts) do
+        local test_context_results = test_context:RunAllTests()
+        for _, result in pairs(test_context_results) do
+            table.insert(results, result)
+        end
+    end
+
+    return results
+end
+
+--[[
+    @description Prints the results of all the tests.
+]]
+function TestRegister._PrintResults(self, results)
+    local success_count = 0
+    local failure_count = 0
+    for _, result in pairs(results) do
+        if result.success then
+            success_count = success_count + 1
+        else
+            failure_count = failure_count + 1
+        end
+    end
+
+    print("--------------------")
+    print("--------------------")
+    print("Test Results:")
+    print_blue("Passed: " .. success_count)
+    if(failure_count > 0) then
+        print_red("Failures: " .. failure_count)
+    else
+        print_blue("ALL TESTS PASSED!")
+    end
+    print("--------------------")
+
+    for _, result in pairs(results) do
+        if result.success then
+            print_blue("Passed: " .. result.name)
+        else
+            print_red("Failure: " .. result.name)
+            print_orange("Message: " .. result.message)
+        end
+    end
+    -- prints line 2 times
+    print("--------------------")
+    print("--------------------")
+end
+
+
+module.TestContext = TestContext
+module.TestRegister = TestRegister
+
+return module]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">4b082db402e520b3040431d600004210</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXBB1AFD4DD7A147BA8FD11A6571698FA1">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Blox</string>
+					<string name="ScriptGuid">{B1632926-DEF1-4E16-84EF-6DEDE8C10992}</string>
+					<ProtectedString name="Source"><![CDATA[local CollectionService = game:GetService("CollectionService")
+--[[
+    A component system for roblox-lua.
+
+    A Blox is an object created in the roblox editor with a tag assigned.
+
+    The tag is used to identify the Blox component and define its behaviour.
+
+    For example, a Blox component for "KillPlayer" would be:...
+    local register = BloxRegister.new() -- here we create a new register
+    -- a register is needed because there can be two different registers, for both server and client.
+    -- if the register were shared, then the client wouldn't be able to preserve its own state,
+    -- because the server would overwrite it.
+
+    -- the first argument is the name of the tag, inside roblox, the tag will register as "__blox__killplayer"
+    -- the second argument is a table containing the configuration for the component.
+    -- predefined configurations are:
+    -- __new: a function that is called when a component is created.
+    -- __constraints: a table containing the constraints for the component
+    -- ... and any other methods you want to add to the component.
+    -- if the "method" added is actually a connection, the register will automatically connect it
+    -- to the registered connections table.
+    local KillPlayer = register:add("killplayer",{ -- if you assign the returned registered component
+        -- you could use the defined methods with it
+        __constraints = {}, -- this is a table containing the constraints for the component
+        __new = function(self) -- this is called when the component is created, you can access the parent
+            -- of the component with self.parent
+            self.player = self.parent
+
+            -- you can access the instance of the own component with self.instance
+            -- this is useful in case you want to access some specific properties of the component
+            -- let's say for example, a position of the component.
+            print(self.instance.Position)
+
+            -- every single defined value here, will be mirrored to the own component "instance"
+            -- inside the attributes.
+        end,
+        kill_player = function(self) -- this is a method that will be added to the component
+            self.player:kill()
+        end,
+        -- add a connection:
+        when_player_dies = self.player.Died:connect(function()
+            print("player "..self.player.Name.." has died!")
+        end)
+    })
+
+    KillPlayer:kill_player(player) -- this will kill the player, in case you need this
+
+
+
+
+    Inside roblox studio, the hierarchy should look like this:
+
+    Workspace
+        - [name of player]
+            - Humanoid
+                - KillPlayer
+
+    so now, in other places, you can access the component with the tag "killplayer" and use its methods.
+
+    if you need to access this specific interface, you would use "register:get(instance)"
+    it will return the "Blox" interface that is attached to the instance, or nil if it doesn't exist.
+
+    for example, let's say you want to kill the player directly using the KillPlayer methods, but you don't
+    directly have the reference to the Blox interface, you would do it like this:
+
+    local player = [your player model]
+    local kill_player = register:get(player.Humanoid.KillPlayer)
+    kill_player:kill_player()
+
+
+
+    The patterns I recommend when creating a register with components:
+    - Check if the created register should be server-only, client-only or shared
+    - For each created component, there should be a created instance with the assigned tag inside
+    the workspace in roblox studio.
+    - If you create a folder named __blox_components and put all the components-template inside,
+    the register will automatically blacklist those specific components to not execute any code
+    or declare any connections.
+    - Use the __constraints to define for example, which type the parent should be, or also which
+    type the component instance itself should be.
+]]
+
+local class = require(script.Parent.Class)
+local CollectionService = game:GetService("CollectionService")
+local TestService = game:GetService("TestService")
+local BloxComponentCreated = Instance.new("BindableEvent")
+
+-- Blox component is being used in the file "src/server/__blox_components/PlayerKiller.server.lua" and
+-- "src/server/BloxRegister.lua"
+
+
+
+--[[
+    This is a blox component, a minimal unit of logic that can be attached to a roblox instance.
+    The blox component is used to define the behaviour of a certain roblox instance.
+
+    You can also attach connections and they would be disconnected automatically when the component or
+    the parent is destroyed.
+]]
+local Blox = {}
+Blox.__index = Blox
+
+function Blox.new(definition, instance, parent)
+    local self = setmetatable({}, Blox)
+    self.Constraints = definition._constraints or {}
+    self.Connections = definition._connections or {}
+    self.Instance = instance
+    self.Parent = parent
+
+    self.props = definition._props or {}
+    -- extracts the defined properties and adds them to the component
+    for k,v in pairs(self.props) do
+        self[k] = v
+    end
+
+    -- extracts the defined methods and adds them to the component
+    for k,v in pairs(self:_GetMethods(definition)) do
+        self[k] = v
+    end
+
+    -- this method goes first, because it will check if the constraints are met
+    if(self:_CheckConstraints()) then
+        self:_Initialize() -- now we can initialize any connection
+    end
+
+    return self
+end
+
+--- Initializes the component
+function Blox._Initialize(self)
+    self:_ConnectAll() -- connect all the connections
+end
+
+function Blox._ConnectAll(self)
+    for k,v in pairs(self.Connections) do
+        v:Connect()
+    end
+end
+
+function Blox._DisconnectAll(self)
+    -- ends all the connections made by the component, but it won't destroy the instance
+    for k,v in pairs(self.Connections) do
+        v:Disconnect()
+    end
+end
+
+function Blox.Destroy(self)
+    -- destroys the instance of the component, the destruction would be triggered by the register
+    self.instance:Destroy()
+end
+
+    
+function Blox._CheckConstraints(self)
+    for k,v in pairs(self.Constraints) do
+        if k == "ParentType" then
+            if not self.Instance.Parent:IsA(v) then
+                -- with warn
+                TestService:Warn(false,"The parent of the component "..self.Instance.Name.." is not a "..v)
+                return false
+            end
+        elseif k == "InstanceType" then
+            if not self.Instance:IsA(v) then
+                -- with warn
+                TestService:Warn(false,"The instance of the component "..self.Instance.Name.." is not a "..v)
+                return false
+            end
+        end
+    end
+    return true
+end
+
+--- Gets the methods from the definition
+-- @param definition The definition of the blox component
+-- @return A table containing the methods
+function Blox._GetMethods(self, definition)
+    local methods = {}
+    for k,v in pairs(definition) do
+        if type(v) == "function" then
+            methods[k] = v
+        end
+    end
+    return methods
+end
+
+
+return Blox]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">4b082db402e520b3040431d600004e07</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX04622AE4EAE441BAADDD2E67F01B3A7C">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">BloxRegister</string>
+					<string name="ScriptGuid">{80AC9606-6310-4076-926F-C124208EBC28}</string>
+					<ProtectedString name="Source"><![CDATA[local CollectionService = game:GetService("CollectionService")
+local BloxDefinition = require(script.Parent.Interfaces.BloxDefinition)
+local Blox = require(script.Parent.Blox)
+local GetBloxCreatedSignal = Instance.new("BindableEvent")
+local BloxComponentCreated = Instance.new("BindableEvent")
+--[[
+    This is the blox register, it should be instanced in a ModuleScript inside either 
+    the server or the client, and then it should be used to add the components in it.
+]]
+
+type BloxRegister = {
+    __components_definitions: {string: BloxDefinition.BloxDefinition<any>},
+    __components: {string: any},
+    __tags: {string: string},
+    __names: {string: string},
+    Add: <T>(self: BloxDefinition.BloxDefinition<T>, name: string, definition: BloxDefinition.BloxDefinition<T>) -> ()
+}
+
+local BloxRegister = {}
+BloxRegister.__index = BloxRegister
+
+function BloxRegister.new(): BloxRegister
+    local self = setmetatable({}, BloxRegister)
+    self._components_definitions = {}
+    self.__components = {}
+    self.__tags = {}
+    self.__names = {}
+
+    self.CreatedBloxEvent = BloxComponentCreated.Event
+    self._get_blox_created_connections = {}
+    return self
+end
+
+
+-- returns a new signal for each new tag created
+function BloxRegister._GetBloxCreatedSignal(self, tag)
+    self._get_blox_created_connections[tag] = self._get_blox_created_connections[tag] or Instance.new("BindableEvent")
+    return self._get_blox_created_connections[tag]
+end
+function BloxRegister.GetBloxCreatedSignal (self, tag)
+    return self._GetBloxCreatedSignal(tag).Event
+end
+
+--- Adds a new definition to the register
+--
+-- @param name The name of the component
+--
+-- @param definition The definition of the component
+function BloxRegister._AddDefinition(self, name, definition)
+    self._components_definitions[name] = definition
+end
+
+--- Creates a new instance of the component, with a template or with the InstanceType
+-- if no InstanceType is provided, it will default to a Folder
+-- @param definition The definition of the component
+-- @param parent The parent of the component
+-- @return The instance of the component
+function BloxRegister._TryCreateTemplateOrInstance(self, tag, definition, parent)
+    local instance = nil
+    if definition._template then
+        instance = definition._template:Clone()
+    else
+        instance = Instance.new(definition._constraints.InstanceType or "Folder")
+        instance.Name = tag
+    end
+    CollectionService:AddTag(instance, tag)
+    instance.Parent = parent
+    return instance
+end
+
+    
+--Creates a new blox component, adds it to the components table and assigns it as a child to the instance
+function BloxRegister.NewBlox(self, name, parent)
+    local tag = self._tags[name]
+    local definition = self._components_definitions[tag]
+    self:_TryCreateTemplateOrInstance(tag, definition, parent)
+end
+
+--[[
+    Adds a new type of component to the register.
+]]
+function BloxRegister.Add(self, name, definition)
+    local tag_name = "__blox_"..name
+    self._tags[name] = tag_name
+    self._names[tag_name] = name
+    self:_AddDefinition(tag_name, definition)
+    self:_OnInstance(tag_name, definition)
+end
+function BloxRegister.Get(self, instance)
+    return self._components[instance]
+end
+
+function BloxRegister._CreateBloxComponentAndAddToTable(self, definition, instance)
+    local parent = instance.Parent
+    local blox = Blox.new(definition, instance, parent)
+    self._components[instance] = blox
+
+    return blox
+end
+    -- handles already created instances with the tag, and also handles newly created instance on runtime
+function BloxRegister._OnInstance(self, name, definition)
+    -- Gets all the instances with this tag
+    local instances = CollectionService:GetTagged(name)
+
+    -- for each instance, it will create a new blox component and add it to the components table
+    for _,instance in pairs(instances) do
+        self:_CreateBloxComponentAndAddToTable(definition, instance)
+    end
+
+    -- this connection is used to automatically connect the newly added instances
+    -- to the interface
+    CollectionService:GetInstanceAddedSignal(name)
+        :Connect(self:_OnInstanceAddedSignalFs(definition,name))
+    -- this other connection is for, when an instance is removed, it will automatically
+    -- disconnect the connections that were added to the interface
+    CollectionService:GetInstanceRemovedSignal(name)
+        :Connect(self:_OnInstanceRemovedSignalFs())
+end
+
+function BloxRegister._OnInstanceAddedSignalFs(self, definition, name)
+    return function(instance)
+        local blox = self:_CreateBloxComponentAndAddToTable(definition, instance)
+        BloxComponentCreated:Fire(blox)
+        self:_GetBloxCreatedSignal(name):Fire(blox)
+    end
+end
+
+function BloxRegister._OnInstanceRemovedSignalFs(self)
+    return function(instance)
+        local blox = nil
+        repeat task.wait()
+            blox = self:Get(instance)
+        until blox
+        blox:_DisconnectAll()  -- destroys any connection the blox component has
+        self._components[instance] = nil     -- removes the blox component from the table, so it can't be accessed in its destroyed state
+    end
+end
+
+        
+return BloxRegister]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">4b082db402e520b3040431d600004e0d</UniqueId>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="LuaWebService" referent="RBX2319C5EC20494603B768E447C660FCC2">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">LuaWebService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000333</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="ProcessInstancePhysicsService" referent="RBX6D329DD50E7E47A4A27FDAB89EDE11D6">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">ProcessInstancePhysicsService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000335</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="LanguageService" referent="RBX5EA7CD9863D643A8BBA0623FEE4C0317">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">LanguageService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000344</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="Lighting" referent="0">
+		<Properties>
+			<Color3 name="Ambient">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</Color3>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<float name="Brightness">2</float>
+			<Color3 name="ColorShift_Bottom">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</Color3>
+			<Color3 name="ColorShift_Top">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</Color3>
+			<float name="EnvironmentDiffuseScale">0</float>
+			<float name="EnvironmentSpecularScale">0</float>
+			<float name="ExposureCompensation">0</float>
+			<Color3 name="FogColor">
+				<R>0.75</R>
+				<G>0.75</G>
+				<B>0.75</B>
+			</Color3>
+			<float name="FogEnd">100000</float>
+			<float name="FogStart">0</float>
+			<float name="GeographicLatitude">41.7332993</float>
+			<bool name="GlobalShadows">true</bool>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">Lighting</string>
+			<Color3 name="OutdoorAmbient">
+				<R>0.5</R>
+				<G>0.5</G>
+				<B>0.5</B>
+			</Color3>
+			<bool name="Outlines">false</bool>
+			<float name="ShadowSoftness">0.5</float>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<token name="Technology">1</token>
+			<string name="TimeOfDay">14:00:00</string>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00000349</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="LodDataService" referent="RBXA3E6002E38B34172B65256859D1C6CF6">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">LodDataService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000034c</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="HttpService" referent="RBX2F3BF980B8C24CBCA3ECFD7F9F065C7E">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<bool name="HttpEnabled">false</bool>
+			<string name="Name">HttpService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00003011</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="Teams" referent="RBXEA95948B0E8D4D35961F2807B4B2AFDC">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">Teams</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00003021</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="VirtualInputManager" referent="RBX9E7B3CEDD72F42F1A318ACF8321EEB75">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<string name="Name">VirtualInputManager</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c00003027</UniqueId>
+		</Properties>
+	</Item>
+	<Item class="ProximityPromptService" referent="RBX07CA4F2AD2A949D28FA5F2188BD26C4E">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<bool name="Enabled">true</bool>
+			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+			<int name="MaxPromptsVisible">16</int>
+			<string name="Name">ProximityPromptService</string>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<UniqueId name="UniqueId">2921eacd6458a89a0402177c0000305e</UniqueId>
+		</Properties>
+	</Item>
+	<SharedStrings>
+		<SharedString md5="yuZpQdnvvUBOTYh1jqZ2cA=="></SharedString>
+	</SharedStrings>
+</roblox>
