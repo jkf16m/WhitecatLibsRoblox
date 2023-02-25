@@ -732,6 +732,7 @@ return register]]></ProtectedString>
 			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
 			<string name="Name">StarterGui</string>
 			<bool name="ResetPlayerGuiOnSpawn">true</bool>
+			<token name="RtlTextSupport">0</token>
 			<token name="ScreenOrientation">2</token>
 			<bool name="ShowDevelopmentGui">true</bool>
 			<int64 name="SourceAssetId">-1</int64>
@@ -936,7 +937,6 @@ return register]]></ProtectedString>
 				<string name="ScriptGuid">{F7B429F9-BE15-4514-A022-82F1DA0C5922}</string>
 				<ProtectedString name="Source"><![CDATA[-- when a player joins, add the "PlayerKiller" component to their humanoid
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Component = require(ReplicatedStorage.Common.Component)
 local Templor = require(ReplicatedStorage.Common.Templor)
 local ServerStorage = game:GetService("ServerStorage")
 local PLAYER_KILLER = ServerStorage.Components.PlayerKiller
@@ -1340,61 +1340,46 @@ return C]]></ProtectedString>
 						<UniqueId name="UniqueId">4b082db402e520b3040431d600003d04</UniqueId>
 					</Properties>
 				</Item>
-			</Item>
-			<Item class="ModuleScript" referent="RBX266C487D54FA4E1FB45FBF960C9F8021">
-				<Properties>
-					<BinaryString name="AttributesSerialize"></BinaryString>
-					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">Component</string>
-					<string name="ScriptGuid">{5FE58656-B709-4ACE-BBD7-6DDDE37F0BB8}</string>
-					<ProtectedString name="Source"><![CDATA[local module = {}
+				<Item class="ModuleScript" referent="RBXE3138C28499D4896B5EB64EECD690C5F">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">__test_PropsX</string>
+						<string name="ScriptGuid">{6E6DC396-BBC4-49CC-A553-FA906430917D}</string>
+						<ProtectedString name="Source"><![CDATA[--!strict
+--[[
+    Tests for PropsX
+]]
 
-function module.Add(parent, child)
-    -- Adds a child to the parent
-    child.Parent = parent
-end
 
-return module]]></ProtectedString>
-					<int64 name="SourceAssetId">-1</int64>
-					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">750970b36a31d3fa0402b25e00003d67</UniqueId>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX374CC84AFC4C4F7F8180DF212B1D58B0">
-				<Properties>
-					<BinaryString name="AttributesSerialize"></BinaryString>
-					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">CVolume</string>
-					<string name="ScriptGuid">{A60E349C-46BC-491D-AC6E-5B18AE193B54}</string>
-					<ProtectedString name="Source"><![CDATA[-- 4D implementation of CFrame, "Coordinate Frame" class of Roblox
+local Test = require(script.Parent.Parent.Test)
+local PropsX = require(script.Parent.Parent.PropsX)
 
-local CVolume = {}
-CVolume.__index = CVolume
 
-function CVolume.new(x,y,z,w, xx, xy, yx, yz, zx, zy, wx, wy, wz)
-    local self = {}
-    self.x = x
-    self.y = y
-    self.z = z
-    self.w = w
-    self.xx = xx
-    self.xy = xy
-    self.yx = yx
-    self.yz = yz
-    self.zx = zx
-    self.zy = zy
-    self.wx = wx
-    self.wy = wy
-    self.wz = wz
-    return setmetatable(self, CVolume)
-end
-]]></ProtectedString>
-					<int64 name="SourceAssetId">-1</int64>
-					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">750970b36a31d3fa0402b25e0000dffd</UniqueId>
-				</Properties>
+local C = Test.TestContext.new("PropsX") -- create a new test context
+
+C:Add("Add property to instance", function(self)
+    local instance = Instance.new("Folder")
+
+    local props = {
+        ["Name"] = "Test",
+        ["Value"] = 10,
+    }
+
+    PropsX.SetAll(instance, props)
+    local values = PropsX.GetAll(instance)
+
+    self:Assert(values["Name"], "Test")
+    self:Assert(values["Value"], 10)
+end)
+
+return C]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<UniqueId name="UniqueId">0b96ed7baf5efc69040b0a5300003b81</UniqueId>
+					</Properties>
+				</Item>
 			</Item>
 			<Item class="ModuleScript" referent="RBXDE0CCCE01A0B4A8AB4B1F5E915908855">
 				<Properties>
@@ -1662,6 +1647,9 @@ end
 
 local Templor = {}
 
+-- BindableEvent that fires when the rearrangement is done.
+Templor.Rearranged = Instance.new("BindableEvent")
+
 --[[
     Rearranges the objects in the game, according to the configuration.
     The configuration must have a Name
@@ -1700,6 +1688,11 @@ function Templor.Rearrange(configuration: TemplorConfiguration): ()
     -- step 5
     DeleteRemainingFolder(Path, Name)
 
+
+    -- extra step
+    -- fires a binding event, so when you need to fire something related to the rearrangement, it is done
+    -- after the rearrangement is done.
+    Templor.Rearranged:Fire()
 
 end
 
@@ -2045,355 +2038,272 @@ return module]]></ProtectedString>
 					<UniqueId name="UniqueId">4b082db402e520b3040431d600004210</UniqueId>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXBB1AFD4DD7A147BA8FD11A6571698FA1">
+			<Item class="ModuleScript" referent="RBX50AFC6796ACB4E6F8C752FFD436AA19A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">Blox</string>
-					<string name="ScriptGuid">{B1632926-DEF1-4E16-84EF-6DEDE8C10992}</string>
-					<ProtectedString name="Source"><![CDATA[local CollectionService = game:GetService("CollectionService")
---[[
-    A component system for roblox-lua.
+					<string name="ScriptGuid">{038D7847-9EED-460D-BD69-A1BF66D04F21}</string>
+					<ProtectedString name="Source"><![CDATA[--[[
+    Blox library
+    a library used to create reusable components in roblox.
 
-    A Blox is an object created in the roblox editor with a tag assigned.
+    These components have a main template folder named "__blox_components", it can be
+    stored either in the Workspace or in ServerStorage. (using the library Templor).
 
-    The tag is used to identify the Blox component and define its behaviour.
+    Blox will keep a register of all components definitions, so you can bind a certain tag to a roblox object
+    to give it some functionality.
 
-    For example, a Blox component for "KillPlayer" would be:...
-    local register = BloxRegister.new() -- here we create a new register
-    -- a register is needed because there can be two different registers, for both server and client.
-    -- if the register were shared, then the client wouldn't be able to preserve its own state,
-    -- because the server would overwrite it.
+    The main reason why this library exists, is to make it easier to create reusable components in roblox,
+    packages already fill that purpose, but you can't edit their attributes or manage multiple scripts at once.
 
-    -- the first argument is the name of the tag, inside roblox, the tag will register as "__blox__killplayer"
-    -- the second argument is a table containing the configuration for the component.
-    -- predefined configurations are:
-    -- __new: a function that is called when a component is created.
-    -- __constraints: a table containing the constraints for the component
-    -- ... and any other methods you want to add to the component.
-    -- if the "method" added is actually a connection, the register will automatically connect it
-    -- to the registered connections table.
-    local KillPlayer = register:add("killplayer",{ -- if you assign the returned registered component
-        -- you could use the defined methods with it
-        __constraints = {}, -- this is a table containing the constraints for the component
-        __new = function(self) -- this is called when the component is created, you can access the parent
-            -- of the component with self.parent
-            self.player = self.parent
+    If you want to create a component in roblox, without breaking functionality, you have the option of:
 
-            -- you can access the instance of the own component with self.instance
-            -- this is useful in case you want to access some specific properties of the component
-            -- let's say for example, a position of the component.
-            print(self.instance.Position)
+    1. You create a roblox object with a script inside, and you indicate through value objects or a folder outside
+    the object, and the script references that "sibling", so now you can edit the script values without
+    interfering with the packaging of the component.
+    For this approach, I recommend using naming conventions like "ComponentName" and "__Attr_ComponentName" (which
+    is a folder) and inside that folder there can be value objects, or simply put attributes in __Attr_ComponentName.
 
-            -- every single defined value here, will be mirrored to the own component "instance"
-            -- inside the attributes.
-        end,
-        kill_player = function(self) -- this is a method that will be added to the component
-            self.player:kill()
-        end,
-        -- add a connection:
-        when_player_dies = self.player.Died:connect(function()
-            print("player "..self.player.Name.." has died!")
-        end)
-    })
+    2. Create a component with blox, it can have whichever values you want, it will use two main libraries to
+    manage its "templates" and "attributes". Templor and Propsor.
+    Templor manages the templates of the component, so you can easily clone or create new components.
+    Propsor manages the attributes of the component, so you can easily change the values of the component.
 
-    KillPlayer:kill_player(player) -- this will kill the player, in case you need this
+    The code of the component can be stored either in the ServerScriptService (it can be everywhere you want).
+    Or also StarterPlayer/StarterPlayerScripts, depending on what kind of component you want to create (or both).
 
 
 
+    Blox components can be either server side, client side or both.
+    To manage this, you have to create two different Registries with the Blox library first.
+    You go to the ServerScriptService and then you create a new module script with whatever name you want.
+        "BloxServer" will suffice.
+    Then you can use that module script to return the registry object, and start adding components to it with
+    the method "Add".
 
-    Inside roblox studio, the hierarchy should look like this:
-
-    Workspace
-        - [name of player]
-            - Humanoid
-                - KillPlayer
-
-    so now, in other places, you can access the component with the tag "killplayer" and use its methods.
-
-    if you need to access this specific interface, you would use "register:get(instance)"
-    it will return the "Blox" interface that is attached to the instance, or nil if it doesn't exist.
-
-    for example, let's say you want to kill the player directly using the KillPlayer methods, but you don't
-    directly have the reference to the Blox interface, you would do it like this:
-
-    local player = [your player model]
-    local kill_player = register:get(player.Humanoid.KillPlayer)
-    kill_player:kill_player()
-
-
-
-    The patterns I recommend when creating a register with components:
-    - Check if the created register should be server-only, client-only or shared
-    - For each created component, there should be a created instance with the assigned tag inside
-    the workspace in roblox studio.
-    - If you create a folder named __blox_components and put all the components-template inside,
-    the register will automatically blacklist those specific components to not execute any code
-    or declare any connections.
-    - Use the __constraints to define for example, which type the parent should be, or also which
-    type the component instance itself should be.
+    You can do the same process for a "BloxClient" registry module script.
 ]]
 
-local class = require(script.Parent.Class)
-local CollectionService = game:GetService("CollectionService")
-local TestService = game:GetService("TestService")
-local BloxComponentCreated = Instance.new("BindableEvent")
+--!strict
+-- import BloxRegistry from src\shared\BloxRegistry.luau
+local BloxRegistry = require(script.Parent.BloxRegistry)
 
--- Blox component is being used in the file "src/server/__blox_components/PlayerKiller.server.lua" and
--- "src/server/BloxRegister.lua"
+-- main functions of the library, it is used to create a new registry of components.
+-- there is no need for a class
+type Blox = {
+    CreateRegistry: () -> BloxRegistry -- this returns a new registry of components.
+}
+local Blox: Blox = {}
 
-
-
---[[
-    This is a blox component, a minimal unit of logic that can be attached to a roblox instance.
-    The blox component is used to define the behaviour of a certain roblox instance.
-
-    You can also attach connections and they would be disconnected automatically when the component or
-    the parent is destroyed.
-]]
-local Blox = {}
-Blox.__index = Blox
-
-function Blox.new(definition, instance, parent)
-    local self = setmetatable({}, Blox)
-    self.Constraints = definition._constraints or {}
-    self.Connections = definition._connections or {}
-    self.Instance = instance
-    self.Parent = parent
-
-    self.props = definition._props or {}
-    -- extracts the defined properties and adds them to the component
-    for k,v in pairs(self.props) do
-        self[k] = v
-    end
-
-    -- extracts the defined methods and adds them to the component
-    for k,v in pairs(self:_GetMethods(definition)) do
-        self[k] = v
-    end
-
-    -- this method goes first, because it will check if the constraints are met
-    if(self:_CheckConstraints()) then
-        self:_Initialize() -- now we can initialize any connection
-    end
-
-    return self
+function Blox.CreateRegistry()
+    return BloxRegistry.new()
 end
-
---- Initializes the component
-function Blox._Initialize(self)
-    self:_ConnectAll() -- connect all the connections
-end
-
-function Blox._ConnectAll(self)
-    for k,v in pairs(self.Connections) do
-        v:Connect()
-    end
-end
-
-function Blox._DisconnectAll(self)
-    -- ends all the connections made by the component, but it won't destroy the instance
-    for k,v in pairs(self.Connections) do
-        v:Disconnect()
-    end
-end
-
-function Blox.Destroy(self)
-    -- destroys the instance of the component, the destruction would be triggered by the register
-    self.instance:Destroy()
-end
-
-    
-function Blox._CheckConstraints(self)
-    for k,v in pairs(self.Constraints) do
-        if k == "ParentType" then
-            if not self.Instance.Parent:IsA(v) then
-                -- with warn
-                TestService:Warn(false,"The parent of the component "..self.Instance.Name.." is not a "..v)
-                return false
-            end
-        elseif k == "InstanceType" then
-            if not self.Instance:IsA(v) then
-                -- with warn
-                TestService:Warn(false,"The instance of the component "..self.Instance.Name.." is not a "..v)
-                return false
-            end
-        end
-    end
-    return true
-end
-
---- Gets the methods from the definition
--- @param definition The definition of the blox component
--- @return A table containing the methods
-function Blox._GetMethods(self, definition)
-    local methods = {}
-    for k,v in pairs(definition) do
-        if type(v) == "function" then
-            methods[k] = v
-        end
-    end
-    return methods
-end
-
 
 return Blox]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">4b082db402e520b3040431d600004e07</UniqueId>
+					<UniqueId name="UniqueId">0b96ed7baf5efc69040b0a5300003b78</UniqueId>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX04622AE4EAE441BAADDD2E67F01B3A7C">
+			<Item class="ModuleScript" referent="RBX570D7577831E46D08E16E189EFC01BCE">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
 					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">BloxRegister</string>
-					<string name="ScriptGuid">{80AC9606-6310-4076-926F-C124208EBC28}</string>
-					<ProtectedString name="Source"><![CDATA[local CollectionService = game:GetService("CollectionService")
-local BloxDefinition = require(script.Parent.Interfaces.BloxDefinition)
-local Blox = require(script.Parent.Blox)
-local GetBloxCreatedSignal = Instance.new("BindableEvent")
-local BloxComponentCreated = Instance.new("BindableEvent")
---[[
-    This is the blox register, it should be instanced in a ModuleScript inside either 
-    the server or the client, and then it should be used to add the components in it.
-]]
-
-type BloxRegister = {
-    __components_definitions: {string: BloxDefinition.BloxDefinition<any>},
-    __components: {string: any},
-    __tags: {string: string},
-    __names: {string: string},
-    Add: <T>(self: BloxDefinition.BloxDefinition<T>, name: string, definition: BloxDefinition.BloxDefinition<T>) -> ()
-}
-
-local BloxRegister = {}
-BloxRegister.__index = BloxRegister
-
-function BloxRegister.new(): BloxRegister
-    local self = setmetatable({}, BloxRegister)
-    self._components_definitions = {}
-    self.__components = {}
-    self.__tags = {}
-    self.__names = {}
-
-    self.CreatedBloxEvent = BloxComponentCreated.Event
-    self._get_blox_created_connections = {}
-    return self
-end
-
-
--- returns a new signal for each new tag created
-function BloxRegister._GetBloxCreatedSignal(self, tag)
-    self._get_blox_created_connections[tag] = self._get_blox_created_connections[tag] or Instance.new("BindableEvent")
-    return self._get_blox_created_connections[tag]
-end
-function BloxRegister.GetBloxCreatedSignal (self, tag)
-    return self._GetBloxCreatedSignal(tag).Event
-end
-
---- Adds a new definition to the register
---
--- @param name The name of the component
---
--- @param definition The definition of the component
-function BloxRegister._AddDefinition(self, name, definition)
-    self._components_definitions[name] = definition
-end
-
---- Creates a new instance of the component, with a template or with the InstanceType
--- if no InstanceType is provided, it will default to a Folder
--- @param definition The definition of the component
--- @param parent The parent of the component
--- @return The instance of the component
-function BloxRegister._TryCreateTemplateOrInstance(self, tag, definition, parent)
-    local instance = nil
-    if definition._template then
-        instance = definition._template:Clone()
-    else
-        instance = Instance.new(definition._constraints.InstanceType or "Folder")
-        instance.Name = tag
-    end
-    CollectionService:AddTag(instance, tag)
-    instance.Parent = parent
-    return instance
-end
-
-    
---Creates a new blox component, adds it to the components table and assigns it as a child to the instance
-function BloxRegister.NewBlox(self, name, parent)
-    local tag = self._tags[name]
-    local definition = self._components_definitions[tag]
-    self:_TryCreateTemplateOrInstance(tag, definition, parent)
-end
+					<string name="Name">BloxRegistry</string>
+					<string name="ScriptGuid">{115DDBA2-533C-42BE-A3BD-2635AAF7ECA1}</string>
+					<ProtectedString name="Source"><![CDATA[--!strict
 
 --[[
-    Adds a new type of component to the register.
+    BloxRegistry
+    a registry of components, it is used to store the components definitions.
+    It is used by the Blox library to create reusable components in roblox.
+
+
+    It has the method "Add" which is used to add a new component to the registry.
 ]]
-function BloxRegister.Add(self, name, definition)
-    local tag_name = "__blox_"..name
-    self._tags[name] = tag_name
-    self._names[tag_name] = name
-    self:_AddDefinition(tag_name, definition)
-    self:_OnInstance(tag_name, definition)
-end
-function BloxRegister.Get(self, instance)
-    return self._components[instance]
-end
 
-function BloxRegister._CreateBloxComponentAndAddToTable(self, definition, instance)
-    local parent = instance.Parent
-    local blox = Blox.new(definition, instance, parent)
-    self._components[instance] = blox
+local BloxRegistry = {}
+BloxRegistry.__index = BloxRegistry
 
-    return blox
-end
-    -- handles already created instances with the tag, and also handles newly created instance on runtime
-function BloxRegister._OnInstance(self, name, definition)
-    -- Gets all the instances with this tag
-    local instances = CollectionService:GetTagged(name)
+local Templor = require(script.Parent.Templor)
+local Propsor = require(script.Parent.Propsor)
 
-    -- for each instance, it will create a new blox component and add it to the components table
-    for _,instance in pairs(instances) do
-        self:_CreateBloxComponentAndAddToTable(definition, instance)
-    end
-
-    -- this connection is used to automatically connect the newly added instances
-    -- to the interface
-    CollectionService:GetInstanceAddedSignal(name)
-        :Connect(self:_OnInstanceAddedSignalFs(definition,name))
-    -- this other connection is for, when an instance is removed, it will automatically
-    -- disconnect the connections that were added to the interface
-    CollectionService:GetInstanceRemovedSignal(name)
-        :Connect(self:_OnInstanceRemovedSignalFs())
-end
-
-function BloxRegister._OnInstanceAddedSignalFs(self, definition, name)
-    return function(instance)
-        local blox = self:_CreateBloxComponentAndAddToTable(definition, instance)
-        BloxComponentCreated:Fire(blox)
-        self:_GetBloxCreatedSignal(name):Fire(blox)
-    end
-end
-
-function BloxRegister._OnInstanceRemovedSignalFs(self)
-    return function(instance)
-        local blox = nil
-        repeat task.wait()
-            blox = self:Get(instance)
-        until blox
-        blox:_DisconnectAll()  -- destroys any connection the blox component has
-        self._components[instance] = nil     -- removes the blox component from the table, so it can't be accessed in its destroyed state
-    end
-end
-
-        
-return BloxRegister]]></ProtectedString>
+]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<UniqueId name="UniqueId">4b082db402e520b3040431d600004e0d</UniqueId>
+					<UniqueId name="UniqueId">0b96ed7baf5efc69040b0a5300003b7b</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXE7740B69311749DABCE28955B7C7387E">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">PropsX</string>
+					<string name="ScriptGuid">{226A2B17-2B67-405B-960C-CA9CD5A99E7B}</string>
+					<ProtectedString name="Source"><![CDATA[--!strict
+--[[
+    PropsX
+
+    A library used to manage the attributes of a component.
+    With this library, you assign a value to a certain instance, then propsor will automatically
+    create a child folder named __props and inside the folder thete are value objects
+    with the assigned values.
+
+]]
+
+
+-- UTILITY FUNCTIONS
+--[[
+    Functions used only by PropsX, they are not exported to the user.
+    ]]
+
+--[[
+    It checks if the received instance has a folder named "__props", if it doesn't have it,
+    it will create it and return it.
+    ]]
+function __TryCreatePropsFolder(instance: Instance): Instance
+    local propsFolder = instance:FindFirstChild("__props")
+    if not propsFolder then
+        propsFolder = Instance.new("Folder")
+        propsFolder.Name = "__props"
+        propsFolder.Parent = instance
+    end
+    return propsFolder
+end
+
+
+--[[
+    Table of value object definitions, it is used to know which data type is equivalent to value object type
+    ]]
+__ValueObjectDefinitions = {
+    ["string"] = "StringValue",
+    ["number"] = "NumberValue",
+    ["boolean"] = "BoolValue",
+    ["Vector3"] = "Vector3Value",
+    ["CFrame"] = "CFrameValue",
+    ["Color3"] = "Color3Value",
+    ["BrickColor"] = "BrickColorValue",
+    ["EnumItem"] = "EnumItemValue",
+    ["UDim"] = "UDimValue",
+    ["UDim2"] = "UDim2Value",
+    ["Ray"] = "RayValue",
+    ["Faces"] = "FacesValue",
+    ["Axes"] = "AxesValue",
+    ["PhysicalProperties"] = "PhysicalPropertiesValue",
+    ["Rect"] = "RectValue",
+    ["Region3"] = "Region3Value",
+    ["Region3int16"] = "Region3int16Value",
+    ["NumberSequence"] = "NumberSequenceValue",
+    ["ColorSequence"] = "ColorSequenceValue",
+    ["NumberRange"] = "NumberRangeValue",
+    ["Vector2"] = "Vector2Value",
+    ["Vector2int16"] = "Vector2int16Value",
+    ["Vector3int16"] = "Vector3int16Value",
+    ["Instance"] = "ObjectValue",
+    ["Content"] = "ContentValue",
+}
+
+--[[
+    It creates a new value object depending on the type of the value.
+    It uses the table of definitions __ValueObjectDefinitions to know which value object to create.
+    ]]
+function __CreateValueObject(key: string, value: any): Instance
+    local valueType = typeof(value)
+    local valueObjectDefinition = __ValueObjectDefinitions[valueType]
+    if valueObjectDefinition then
+        local valueObject = Instance.new(valueObjectDefinition)
+        valueObject.Name = key
+        valueObject.Value = value
+        return valueObject
+    else
+        error("The type of the value is not supported")
+    end
+end
+
+-- END UTILITY FUNCTIONS
+
+
+local PropsX = {}
+type PropsX = {
+    SetAll: (Instance, table) -> nil,           -- Sets all the values of an instance
+    GetAll: (Instance) -> table,                -- Gets all the values of an instance
+    Get: (Instance, string) -> table,           -- Gets a specific value from an instance
+    Set: (Instance, string, any) -> nil,        -- Sets a specific value from an instance
+}
+
+
+--[[ Sets all the values of an instance
+
+    Invoke "__TryCreatePropsFolder" to try to create the __props folder.
+
+    Then it will iterate through the table of values, and it will create a new value object
+    depending on the type of the value. For that it uses the function "__CreateValueObject".
+]]
+function PropsX.SetAll(instance: Instance, values: table)
+    local propsFolder = __TryCreatePropsFolder(instance)
+    for key, value in pairs(values) do
+        local valueObject = __CreateValueObject(key, value)
+        valueObject.Parent = propsFolder
+    end
+end
+
+--[[ Gets all the values of an instance
+
+    It will iterate through the __props folder and it will get the value of each value object.
+    Then it will return a table with the values.
+]]
+function PropsX.GetAll(instance: Instance): table
+    local propsFolder = instance:FindFirstChild("__props")
+    if not propsFolder then
+        return {}
+    end
+    local values = {}
+    for _, valueObject in pairs(propsFolder:GetChildren()) do
+        values[valueObject.Name] = valueObject.Value
+    end
+    return values
+end
+
+--[[ Gets a specific value from an instance
+
+    It will get the value object from the __props folder and it will return the value.
+]]
+function PropsX.Get(instance: Instance, key: string): any
+    local propsFolder = instance:FindFirstChild("__props")
+    if not propsFolder then
+        return nil
+    end
+    local valueObject = propsFolder:FindFirstChild(key)
+    if not valueObject then
+        return nil
+    end
+    return valueObject.Value
+end
+
+--[[ Sets a specific value from an instance
+
+    It will get the value object from the __props folder and it will set the value.
+]]
+function PropsX.Set(instance: Instance, key: string, value: any)
+    local propsFolder = __TryCreatePropsFolder(instance)
+    local valueObject = propsFolder:FindFirstChild(key)
+    if not valueObject then
+        valueObject = __CreateValueObject(key, value)
+        valueObject.Parent = propsFolder
+    else
+        valueObject.Value = value
+    end
+end
+
+
+return PropsX]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<UniqueId name="UniqueId">0b96ed7baf5efc69040b0a5300003b7f</UniqueId>
 				</Properties>
 			</Item>
 		</Item>
