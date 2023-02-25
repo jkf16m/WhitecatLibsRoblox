@@ -110,6 +110,9 @@ end
 
 local Templor = {}
 
+-- BindableEvent that fires when the rearrangement is done.
+Templor.Rearranged = Instance.new("BindableEvent")
+
 --[[
     Rearranges the objects in the game, according to the configuration.
     The configuration must have a Name
@@ -148,6 +151,11 @@ function Templor.Rearrange(configuration: TemplorConfiguration): ()
     -- step 5
     DeleteRemainingFolder(Path, Name)
 
+
+    -- extra step
+    -- fires a binding event, so when you need to fire something related to the rearrangement, it is done
+    -- after the rearrangement is done.
+    Templor.Rearranged:Fire()
 
 end
 
